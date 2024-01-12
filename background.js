@@ -12,7 +12,6 @@ async function main() {
             chrome.scripting.executeScript({
                 target: { tabId: activeTab.id },
                 function: (/*arguments*/) => {
-                    console.log("avant")
                     
                     // Obtenez une référence vers l'élément que vous souhaitez "cliquer"
                     var myElement = document.getElementsByClassName("ytp-ad-skip-button-modern")[0];
@@ -24,7 +23,6 @@ async function main() {
 
                         // Dispatchez l'événement sur l'élément
                         myElement.dispatchEvent(clickEvent);
-                        console.log("apres")
                     }
 
                     var blockagePopup = document.querySelector(selector_to_delete[1])
@@ -36,7 +34,6 @@ async function main() {
                 },
             });
         } else {
-            console.log("not on youtube")
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
     }
