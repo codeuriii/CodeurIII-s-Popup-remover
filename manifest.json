@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "CodeurIII's Short YouTube's AD Blocker",
+    "version": "3.0",
+    "description": "Cette extension permet de bloquer seulement les pubs qui peuvent se passer.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "48": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
+  
