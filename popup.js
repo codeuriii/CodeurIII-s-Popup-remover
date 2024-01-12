@@ -3,4 +3,3 @@ document.addEventListener('DOMContentLoaded', function() {
         chrome.tabs.sendMessage(tabs[0].id, { action: 'logYouTubeContent' });
     });
 });
-  

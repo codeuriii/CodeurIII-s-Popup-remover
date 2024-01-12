@@ -19,4 +19,3 @@ chrome.runtime.onMessage.addListener(
         }
     }
 );
-  
