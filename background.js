@@ -1,4 +1,4 @@
-let selector_to_delete = ['body > tp-yt-iron-overlay-backdrop', 'body > ytd-app > ytd-popup-container > tp-yt-paper-dialog']
+let selector_to_delete = ['tp-yt-iron-overlay-backdrop', 'body > ytd-app > ytd-popup-container > tp-yt-paper-dialog']
 async function main() {
     while (true) {
         const activeTab = await getCurrentTab();
@@ -28,7 +28,7 @@ async function main() {
                     var blockagePopup = document.querySelector(selector_to_delete[1])
                     if (blockagePopup !== undefined) {
                         blockagePopup.remove()
-                        var bgBlockagePopup = document.querySelector(selector_to_delete[0])
+                        var bgBlockagePopup = document.getElementsByTagName(selector_to_delete[0])[0]
                         bgBlockagePopup.remove()
                     }
                 },
