@@ -1,5 +1,5 @@
-# CodeurIII-s-AD-Skipper
-A small edge extension to block shorts ads on YouTube.
+# CodeurIII's YouTube Popup remover
+A small edge extension to block shorts ads and remove popup anti-adblock on YouTube.
 
 Commit 12/01
 Add feature:
