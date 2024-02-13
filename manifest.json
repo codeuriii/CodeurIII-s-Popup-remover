@@ -1,9 +1,9 @@
 
 {
     "manifest_version": 3,
-    "name": "CodeurIII's Short YouTube's AD Blocker",
+    "name": "CodeurIII's YouTube Popup remover",
     "version": "3.2",
-    "description": "Cette extension permet de bloquer seulement les pubs qui peuvent se passer.",
+    "description": "Cette extension permet d'enlever la popup anti-adblock - bloquer les pubs pouvant s'ignorer",
     "permissions": [
         "storage",
         "activeTab",
